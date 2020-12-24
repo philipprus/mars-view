@@ -1,0 +1,50 @@
+$base-color: #ced4da;
+$light-background: lighten(desaturate($base-color, 50%), 12.5%);
+
+.current-page {
+    font-size: 1.5rem;
+    vertical-align: middle;
+  }
+  
+  .current-page,
+  .country-name,
+  .country-region {
+    line-height: 1;
+  }
+  ul.pagination {
+    margin-top: 0;
+    margin-bottom: 0;
+  
+    li.page-item {
+      display: inline;
+    }
+    li.page-item.active {
+      a.page-link {
+        color: saturate(darken($base-color, 50%), 5%) !important;
+        background-color: saturate(lighten($base-color, 7.5%), 2.5%) !important;
+        border-color: $base-color !important;
+      }
+    }
+  
+    a.page-link {
+      text-align: center;
+      box-shadow: none !important;
+      border-color: #ced4da !important;
+      color: #6b88a4;
+      font-weight: normal;
+      font-size: 1rem;
+      text-decoration: none;
+      border: 1px solid #ccc;
+      width: 30px;
+      height: 30px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 5px;
+      border-radius: 5px;
+  
+      &:hover {
+        background-color: $light-background;
+      }
+    }
+  }
