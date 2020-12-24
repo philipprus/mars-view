@@ -23,8 +23,7 @@ class Pagination extends Component {
   render() {
     if (
       !this.totalRecords ||
-      this.totalPages === 1 ||
-      this.totalPages <= this.pageLimit
+      this.totalPages === 1 
     )
       return null;
 
